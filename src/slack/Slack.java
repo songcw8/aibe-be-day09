@@ -15,8 +15,8 @@ public class Slack {
     private final MySecret secret;
     public Slack() throws NoEnvException {
         logger = MyLogger.getLogger();
-//        logger.setLevel(MyLoggerLevel.DEBUG);
-        logger.setLevel(MyLoggerLevel.INFO);
+        logger.setLevel(MyLoggerLevel.DEBUG);
+//        logger.setLevel(MyLoggerLevel.INFO);
         secret = MySecret.getSecret();
         webClient = WebClient.getWebClient();
     }
@@ -29,7 +29,6 @@ public class Slack {
         map.put("body", """
                 {"text": "%s"}
                 """.formatted(msg));
-        map.put("headers", "");
         try {
             result = webClient.sendRequest( webClient.makeRequest(map));
         } catch (Exception e) {

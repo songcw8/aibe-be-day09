@@ -12,9 +12,7 @@ public class MyLogger implements ILogger{
         logger.addHandler(handler);
         logger.setLevel(MyLoggerLevel.DEBUG.level);
         logger.setUseParentHandlers(false);
-
-    }
-
+    } // 생성자를 private
     private final Logger logger;
     private static MyLogger instance;
 
@@ -28,6 +26,7 @@ public class MyLogger implements ILogger{
     public void setLevel(MyLoggerLevel level) {
         this.logger.setLevel(level.level);
         System.out.println(level.level);
+        System.out.println(logger.getLevel());
     }
 
     @Override
