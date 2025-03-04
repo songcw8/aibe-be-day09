@@ -1,12 +1,21 @@
 import util.logger.MyLogger;
 import util.logger.MyLoggerLevel;
+import util.webClient.WebClient;
+
+import java.util.HashMap;
 
 public class Application {
     public static void main(String[] args) {
 
         MyLogger logger = MyLogger.getLogger();
-        logger.setLevel(MyLoggerLevel.DEBUG.DEBUG);
-        logger.debug("안녕 여러분, 나는 누구에요");
-
+        logger.setLevel(MyLoggerLevel.DEBUG);
+        WebClient webClient = WebClient.getWebClient();
+        String result = "";
+        try {
+            result = webClient.sendRequest("", webClient.makeRequest(new HashMap<>()));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        logger.info(result);
     }
 }
