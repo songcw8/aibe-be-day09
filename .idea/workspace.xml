@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6bba68-9bc9-4f4e-a393-906b5e4b0575" name="변경" comment="WebClient">
-      <change afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/LLM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/ModelCategory.java" afterDir="false" />
+    <list default="true" id="8e6bba68-9bc9-4f4e-a393-906b5e4b0575" name="변경" comment="LLM">
       <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/LLM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/LLM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/ModelCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/llm/ModelCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/slack/Slack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/slack/Slack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/logger/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/logger/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/secret/SecretCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/secret/SecretCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/webClient/WebClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../데브코스 생성형 AI 백엔드/Java_Study/ex07_Slack_llm/src/util/webClient/WebClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +72,10 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="SLACK_BOT_URL" value="https://hooks.slack.com/services/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" />
+        <env name="SLACK_BOT_URL" value="https://hooks.slack.com/services/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" />
         <env name="TOGETHER_API_KEY" value="tgp_v1_s9yPlb6jdXGR708orv_iOg9-JPYgHhKOavRdQmxu6u4" />
+        <env name="YOUTUBE_API_KEY" value="AIzaSyBN2eJcsNCTdc8GoCw7x8rAXr4tLkjgUnY" />
+        <env name="GEMINI_API_KEY" value="AIzaSyDKLEd7L1zpA2iaKdX7vrY9svFjCOKI2Aw" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="ex07_Slack_llm" />
@@ -107,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741051956478</updated>
       <workItem from="1741051959235" duration="15000" />
-      <workItem from="1741051985110" duration="13256000" />
+      <workItem from="1741051985110" duration="18474000" />
     </task>
     <task id="LOCAL-00001" summary="firstCommit">
       <option name="closed" value="true" />
@@ -133,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741060530605</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LLM">
+      <option name="closed" value="true" />
+      <created>1741072501869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741072501869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firstCommit" />
     <MESSAGE value="WebClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebClient" />
+    <MESSAGE value="LLM" />
+    <option name="LAST_COMMIT_MESSAGE" value="LLM" />
   </component>
 </project>
